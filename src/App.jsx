@@ -2,6 +2,7 @@
 // import { useEffect, useState } from 'react'
 import '../style.css'
 import Logo from './Logo'
+import Card from './Card'
 export function App () {
   /* const [fact, setFact] = useState()
   const [imageUrl, setImageUrl] = useState()
@@ -23,7 +24,7 @@ export function App () {
         /*  const firstWord = fact.split(' ', 3).join(' ')
       })
   }, [])
-   useEffect(() => {
+useEffect(() => {
       async function getFact () {
         const response = await fetch(ENPOINT_RANDOM_FACT)
         const data = await response.json()
@@ -33,11 +34,17 @@ export function App () {
 
   return (
     <main>
-      <section>
+      <section className='container'>
         <Logo />
         <div className='container-loading'>
           <div className='loading'></div>
         </div>
+      </section>
+      <section className='container-cards'>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </section>
     </main>
   )
