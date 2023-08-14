@@ -1,4 +1,5 @@
 import React from 'react'
+import './card.css'
 
 const Card = () => {
   return (
@@ -7,7 +8,7 @@ const Card = () => {
       <div className='banner' />
       <section className='inf'>
         <h4>TechnologySA</h4>
-        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h6>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h6>
       </section>
       <div className='buttom'>
         <button>Web3</button>

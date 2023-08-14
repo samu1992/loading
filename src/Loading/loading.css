@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .logo{
+    color: red;
+  }
+  
+  .container-loading{
+  width: 150px;
+  height: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #e6e6e6;
+  }
+  
+  .loading{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    animation-name: loading;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.7, 0.7, 1.0, 0.9);
+  }
+  
+  @keyframes loading {
+    0%{
+      width: 1%;
+    }
+    100%{
+      width: 100%;
+    }
+  }
+  
+  .animated-svg path {
+    animation-duration: 4s;
+    animation: changeColor 4s linear infinite;
+    animation-timing-function: cubic-bezier(0.7, 0.7, 1.0, 0.9);
+  }
+  @keyframes changeColor {
+    0% {
+      fill: #E6E6E6; /* Gris */
+    }
+    50% {
+      fill: #0000ff; /* Azul */
+    }
+    100% {
+      fill: #000000; /* Negro */
+    }
+  }

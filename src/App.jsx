@@ -1,8 +1,10 @@
 /* eslint-disable react/self-closing-comp */
 // import { useEffect, useState } from 'react'
 import '../style.css'
-import Logo from './Logo'
-import Card from './Card'
+import Card from './Card/Card'
+import Login from './Login/Login'
+import Loading from './Loading/Loading'
+
 export function App () {
   /* const [fact, setFact] = useState()
   const [imageUrl, setImageUrl] = useState()
@@ -33,19 +35,10 @@ useEffect(() => {
   }, []) */
 
   return (
-    <main>
-      <section className='container'>
-        <Logo />
-        <div className='container-loading'>
-          <div className='loading'></div>
-        </div>
-      </section>
-      <section className='container-cards'>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </section>
+    <main className='app'>
+      <Login />
+      <Loading />
+      <Card />
     </main>
   )
 }
